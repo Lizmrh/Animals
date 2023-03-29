@@ -19,6 +19,12 @@ const animalsSchema = new mongoose.Schema(
             type: Number,
             required: true
         }
+    },
+    {
+        timestamps: true
     }
+);
 
-)
+const Animals = mongoose.model('animal', animalsSchema);
+
+module.exports = Animals;
