@@ -1,4 +1,4 @@
-const mongoose = requires('mongoose');
+const mongoose = require('mongoose');
 
 const animalsSchema = new mongoose.Schema(
     {
@@ -9,7 +9,7 @@ const animalsSchema = new mongoose.Schema(
         },
         extinct: {
             type: Boolean,
-            required: true
+            // required: true
         },
         location: {
             type: String,

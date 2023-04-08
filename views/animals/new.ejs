@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs', {name: "Add your animal"}) %>
+<h1>Add a new domestic animal!</h1>
+<form action="/animals" method=POST>
+    <label for="species">Species: </label>
+    <input type="text" name="species" id="species">
+    <br>
+    <label for="extinct">Extinct: </label>
+    <input type="text" name="extinct" id="extinct">
+    <br>
+    <label for="location">Location: </label>
+    <input type="text" name="location" id="location">
+    <br>
+    <label for="lifeExpectancy">Life Expectancy: </label>
+    <input type="number" name="lifeExpectancy" id="lifeExpectancy">
+    <br>
+    <input type="submit" value="Add this Animal now">
+</form>
+
+<%- include('../partials/footer.ejs') %>
